@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@config/*": ["./src/config/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@partials/*": ["./src/partials/*"],
+      "@types/*": ["./src/types/*"],
+      "@content/*": ["./src/content/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@admin-components/*": ["./src/admin-components/*"],
+      "@admin-pages/*": ["./src/admin-pages/*"],
+      "@admin-config/*": ["./src/admin-config/*"],
+      "@admin-lib/*": ["./src/admin-lib/*"],
+      "@shortcodes/*": ["./src/shortcodes/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
